@@ -16,22 +16,26 @@ The project is part of an AI-driven healthcare initiative aimed at improving dia
 - Establish a **baseline performance** for future improvements
 ---
 ## Project Structure
+
+```
 teeth-classification-cnn/
 │
 ├── dataset/
-│ └── (processed and augmented dental images)
+│   └── (processed and augmented dental images)
 │
 ├── notebook/
-│ └── teeth_classification_week1.ipynb
+│   └── teeth_classification_week1.ipynb
 │
 ├── model/
-│ ├── teeth_classifier_model.h5
-│ └── model_architecture.png
+│   ├── teeth_classifier_model.h5
+│   └── model_architecture.png
 │
 ├── pdf_task/
-│ └── Teeth Classification.pdf
+│   └── Teeth Classification.pdf
 │
 └── README.md
+```
+
 > All preprocessing and training were performed using the Kaggle environment.
 ---
 ## Dataset & Preprocessing
