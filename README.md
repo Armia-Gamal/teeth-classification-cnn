@@ -8,7 +8,7 @@ This work represents **Week 1** of the project and focuses on:
 - CNN baseline model training
 The project is part of an AI-driven healthcare initiative aimed at improving diagnostic accuracy in dental applications.
 ---
-## 🎯 Objectives
+##  Objectives
 - Prepare dental images for training through **normalization and data augmentation**
 - Visualize the **class distribution** to analyze dataset balance
 - Display **images before and after augmentation**
@@ -59,7 +59,7 @@ A **CNN model built from scratch** was implemented with the following components
 - Fully connected (`Dense`) layers for classification
 - `Dropout` layers for regularization
 The following diagram illustrates the CNN architecture used for teeth classification:
-![Model Architecture](images/model_architecture.png)
+![Model Architecture](images/model.png)
 ---
 ## Training Results
 - The model achieved strong baseline performance:
