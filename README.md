@@ -1,6 +1,6 @@
 # Teeth Classification using CNN (Week 1)
 
-## 📌 Project Overview
+##  Project Overview
 This project presents an end-to-end computer vision solution for **dental teeth image classification**.  
 The goal is to classify dental images into **7 distinct classes** using a **Convolutional Neural Network (CNN) built from scratch**.
 
@@ -41,12 +41,11 @@ teeth-classification-cnn/
 └── README.md
 
 
-> **Note:** The dataset is not included in the repository due to size limitations.  
 > All preprocessing and training were performed using the Kaggle environment.
 
 ---
 
-## 🧪 Dataset & Preprocessing
+##  Dataset & Preprocessing
 - Dental images were resized and normalized to improve training stability
 - Pixel values were scaled to the range **[0, 1]**
 - Data augmentation techniques were applied to enhance generalization, including:
@@ -58,7 +57,7 @@ These steps help reduce overfitting and improve the robustness of the model.
 
 ---
 
-## 📊 Data Visualization
+##  Data Visualization
 The notebook includes multiple visualizations to better understand the dataset and model behavior:
 - **Class distribution plots** to analyze dataset balance
 - **Original vs augmented image comparisons**
@@ -69,7 +68,7 @@ These visualizations confirm stable learning behavior and good generalization.
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 A **CNN model built from scratch** was implemented with the following components:
 - Multiple `Conv2D` layers for feature extraction
 - `MaxPooling2D` layers for spatial downsampling
@@ -77,12 +76,13 @@ A **CNN model built from scratch** was implemented with the following components
 - Fully connected (`Dense`) layers for classification
 - `Dropout` layers for regularization
 
-A visual representation of the architecture is provided in:
-model/model_architecture.png
+The following diagram illustrates the CNN architecture used for teeth classification:
+
+![Model Architecture](images/model_architecture.png)
 
 ---
 
-## 📈 Training Results
+##  Training Results
 - The model achieved strong baseline performance:
   - High training and validation accuracy
   - Smooth convergence of loss curves
@@ -91,9 +91,14 @@ model/model_architecture.png
 
 This baseline model will be used as a reference point for future improvements.
 
+
+The following plot shows the training and validation accuracy over epochs:
+
+![Training vs Validation Accuracy](images/training_validation_accuracy.png)
+
 ---
 
-## 💾 Saved Model
+##  Saved Model
 The trained model is saved in the following path:
 
 model/teeth_classifier_model.h5
