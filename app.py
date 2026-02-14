@@ -7,7 +7,7 @@ from PIL import Image
 # Sidebar
 # ===============================
 st.sidebar.title("🦷 Oral Disease AI")
-st.sidebar.image("../images/output.png", use_container_width=True)
+st.sidebar.image("/images/output.png", use_container_width=True)
 
 st.sidebar.markdown("""
 ### About This App
@@ -36,7 +36,7 @@ Developed by **Armia Gamal** ❤️
 # ===============================
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("../model/best_model.h5")
+    return tf.keras.models.load_model("/model/best_model.h5")
 
 model = load_model()
 
