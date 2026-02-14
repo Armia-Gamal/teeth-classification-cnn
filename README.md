@@ -1,85 +1,165 @@
-# Teeth Classification using CNN (Week 1)
-## Project Overview
-This project presents an end-to-end computer vision solution for **dental teeth image classification**.
-The goal is to classify dental images into **7 distinct classes** using a **Convolutional Neural Network (CNN) built from scratch**.
-This work represents **Week 1** of the project and focuses on:
-- Data preprocessing
-- Data visualization
-- CNN baseline model training
-The project is part of an AI-driven healthcare initiative aimed at improving diagnostic accuracy in dental applications.
+# 🦷 Teeth Classification using CNN  
+### AI-Powered Dental Image Classification System
+
 ---
-##  Objectives
-- Prepare dental images for training through **normalization and data augmentation**
-- Visualize the **class distribution** to analyze dataset balance
-- Display **images before and after augmentation**
-- Build and train a **CNN model from scratch** using TensorFlow
-- Establish a **baseline performance** for future improvements
+
+## 🌐 Live Demo
+
+🔗 **Streamlit App:**  
+https://teeth-classification-cnn.streamlit.app/
+
 ---
+
+## 📌 Project Overview
+
+This project presents an end-to-end **AI-powered dental image classification system** built using a **Convolutional Neural Network (CNN)**.
+
+The model classifies dental images into **7 distinct oral disease categories**, forming a baseline intelligent diagnostic support tool for dental healthcare applications.
+
+This project represents the first phase of a larger AI-driven medical initiative focused on improving diagnostic accuracy in dental imaging.
+
+---
+
+## 🎯 Objectives
+
+- Preprocess and normalize dental images for stable CNN training  
+- Apply **data augmentation** to enhance generalization  
+- Analyze dataset balance using visualization techniques  
+- Build a **CNN model from scratch using TensorFlow**  
+- Establish a strong baseline performance  
+- Deploy the trained model using **Streamlit Community Cloud**
+
+---
+
+## 🦷 Disease Classes
+
+The model classifies images into the following 7 categories:
+
+- **CaS**
+- **CoS**
+- **Gum**
+- **MC**
+- **OC**
+- **OLP**
+- **OT**
+
+---
+
+## 🧠 Model Architecture
+
+A CNN model was built from scratch with:
+
+- Multiple `Conv2D` layers for feature extraction  
+- `MaxPooling2D` for spatial downsampling  
+- `GlobalAveragePooling2D` to reduce parameters  
+- Fully connected `Dense` layers for classification  
+- `Dropout` layers to reduce overfitting  
+
+### 📊 Architecture Diagram
+
+![Model Architecture](images/model.png)
+
+---
+
+## 📊 Dataset & Preprocessing
+
+All images were:
+
+- Resized to **256 × 256**
+- Normalized to pixel range **[0, 1]**
+- Augmented using:
+  - Rotation
+  - Horizontal flipping
+  - Zooming
+
+These techniques improve robustness and reduce overfitting.
+
+---
+
+## 📈 Training Performance
+
+The model achieved:
+
+- Strong training accuracy  
+- Stable validation accuracy  
+- Smooth loss convergence  
+- No significant overfitting  
+
+### Training vs Validation Accuracy
+
+![Training vs Validation Accuracy](images/training_validation_accuracy.png)
+
+---
+
+## 🚀 Deployment
+
+The trained model was deployed using:
+
+- Streamlit  
+- TensorFlow 2.20  
+- Streamlit Community Cloud  
+
+Users can:
+
+- Upload a dental image  
+- Receive predicted disease class  
+- View model confidence score  
+
+---
+
+## 📁 Project Structure
+
+
 ## Project Structure
 
 ```
 teeth-classification-cnn/
 │
-├── dataset/
-│   └── (processed and augmented dental images)
+├── app.py # Streamlit application
+├── requirements.txt # Dependencies
 │
-├── notebook/
-│   └── teeth_classification_week1.ipynb
+├── images/ # Visual assets
+│ ├── model.png
+│ ├── output.png
+│ └── training_validation_accuracy.png
 │
 ├── model/
-│   ├── teeth_classifier_model.h5
-│   └── model_architecture.png
+│ └── best_model.h5 # Trained CNN model
 │
-├── pdf_task/
-│   └── Teeth Classification.pdf
-│
-└── README.md
-```
+├── dataset/ # Processed dataset
+├── notebook/ # Jupyter notebooks
+└── pdf_task/ # Project documentation
 
-> All preprocessing and training were performed using the Kaggle environment.
+
 ---
-## Dataset & Preprocessing
-- Dental images were resized and normalized to improve training stability
-- Pixel values were scaled to the range **[0, 1]**
-- Data augmentation techniques were applied to enhance generalization, including:
-  - Rotation
-  - Horizontal flipping
-  - Zooming
-These steps help reduce overfitting and improve the robustness of the model.
+
+## 🛠 Technologies Used
+
+- Python  
+- TensorFlow / Keras  
+- NumPy  
+- Matplotlib  
+- Streamlit  
+- Git & GitHub  
+
 ---
-## Data Visualization
-The notebook includes multiple visualizations to better understand the dataset and model behavior:
-- **Class distribution plots** to analyze dataset balance
-- **Original vs augmented image comparisons**
-- **Training vs validation accuracy curves**
-- **Training vs validation loss curves**
-These visualizations confirm stable learning behavior and good generalization.
+
+## 👩‍💻 Author
+
+**Armia Gamal**  
+AI & Computer Vision Enthusiast  
+
+🔗 GitHub: https://github.com/Armia-Gamal  
+🔗 LinkedIn: https://www.linkedin.com/in/armia-gamal/
+
 ---
-## Model Architecture
-A **CNN model built from scratch** was implemented with the following components:
-- Multiple `Conv2D` layers for feature extraction
-- `MaxPooling2D` layers for spatial downsampling
-- `GlobalAveragePooling2D` to reduce parameters and prevent overfitting
-- Fully connected (`Dense`) layers for classification
-- `Dropout` layers for regularization
-The following diagram illustrates the CNN architecture used for teeth classification:
-![Model Architecture](images/model.png)
----
-## Training Results
-- The model achieved strong baseline performance:
-  - High training and validation accuracy
-  - Smooth convergence of loss curves
-  - No significant overfitting observed
-- Minor validation fluctuations are expected due to data augmentation
-This baseline model will be used as a reference point for future improvements.
-The following plot shows the training and validation accuracy over epochs:
-![Training vs Validation Accuracy](images/training_validation_accuracy.png)
----
-## Saved Model
-The trained model is saved in the following path:
-model/teeth_classifier_model.h5
-### Load the model:
-```python:disable-run
-from tensorflow.keras.models import load_model
-model = load_model("model/teeth_classifier_model.h5")
-```
+
+## ⭐ Final Note
+
+This project demonstrates the practical integration of:
+
+- Deep Learning  
+- Medical Imaging  
+- Model Deployment  
+
+into a real-world AI healthcare application.
