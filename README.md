@@ -3,14 +3,14 @@
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
 🔗 **Streamlit App:**  
 https://teeth-classification-cnn.streamlit.app/
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project presents an end-to-end **AI-powered dental image classification system** built using a **Convolutional Neural Network (CNN)**.
 
@@ -20,7 +20,7 @@ This project represents the first phase of a larger AI-driven medical initiative
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Preprocess and normalize dental images for stable CNN training  
 - Apply **data augmentation** to enhance generalization  
@@ -31,7 +31,7 @@ This project represents the first phase of a larger AI-driven medical initiative
 
 ---
 
-## 🦷 Disease Classes
+##  Disease Classes
 
 The model classifies images into the following 7 categories:
 
@@ -45,7 +45,7 @@ The model classifies images into the following 7 categories:
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 A CNN model was built from scratch with:
 
@@ -55,13 +55,13 @@ A CNN model was built from scratch with:
 - Fully connected `Dense` layers for classification  
 - `Dropout` layers to reduce overfitting  
 
-### 📊 Architecture Diagram
+###  Architecture Diagram
 
 ![Model Architecture](images/model.png)
 
 ---
 
-## 📊 Dataset & Preprocessing
+##  Dataset & Preprocessing
 
 All images were:
 
@@ -76,7 +76,7 @@ These techniques improve robustness and reduce overfitting.
 
 ---
 
-## 📈 Training Performance
+##  Training Performance
 
 The model achieved:
 
@@ -91,7 +91,7 @@ The model achieved:
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 The trained model was deployed using:
 
@@ -107,7 +107,7 @@ Users can:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 
 ## Project Structure
@@ -133,7 +133,7 @@ teeth-classification-cnn/
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - Python  
 - TensorFlow / Keras  
@@ -144,7 +144,7 @@ teeth-classification-cnn/
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Armia Gamal**  
 AI & Computer Vision Enthusiast  
@@ -154,7 +154,7 @@ AI & Computer Vision Enthusiast
 
 ---
 
-## ⭐ Final Note
+##  Final Note
 
 This project demonstrates the practical integration of:
 
